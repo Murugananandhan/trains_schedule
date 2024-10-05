@@ -7,65 +7,7 @@
   <title>Train Schedule Manager</title>
   
   <link rel="stylesheet" href="styles.css">
-  <!-- <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .container {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 300px;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    .input-group {
-      margin-bottom: 15px;
-    }
-    .input-group label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    .input-group input {
-      width: 100%;
-      padding: 8px;
-      box-sizing: border-box;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-    }
-    .btn {
-      width: 100%;
-      padding: 10px;
-      background-color: #28a745;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .btn:hover {
-      background-color: #218838;
-    }
-    .schedule {
-      margin-top: 20px;
-    }
-    .train {
-      background-color: #e9ecef;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-    }
-  </style> -->
+ 
 </head>
 <body>
   <div class="container">
@@ -94,62 +36,6 @@
     <div class="schedule" id="scheduleDisplay"></div>
   </div>
 <script src="script.js"></script>
-  <!-- <script>
-
-    
-    class TrainSchedule {
-      constructor() {
-        this.trains = [];
-      }
-
-      
-      addTrain(trainNumber, arrivalTime, departureTime) {
-        const train = {
-          trainNumber: trainNumber,
-          arrivalTime: arrivalTime,
-          departureTime: departureTime
-        };
-        this.trains.push(train);
-        this.displaySchedule();
-      }
-
-      
-      displaySchedule() {
-        const scheduleDisplay = document.getElementById('scheduleDisplay');
-        scheduleDisplay.innerHTML = ''; 
-
-        this.trains.forEach((train) => {
-          const trainElement = document.createElement('div');
-          trainElement.classList.add('train');
-          trainElement.innerHTML = `
-            <strong>Train Number:</strong> ${train.trainNumber}<br>
-            <strong>Arrival:</strong> ${train.arrivalTime}<br>
-            <strong>Departure:</strong> ${train.departureTime}
-          `;
-          scheduleDisplay.appendChild(trainElement);
-        });
-      }
-    }
-
-    
-    const schedule = new TrainSchedule();
-
-    
-    function addTrain() {
-      const trainNumber = document.getElementById('trainNumber').value;
-      const arrivalTime = document.getElementById('arrivalTime').value;
-      const departureTime = document.getElementById('departureTime').value;
-
-      
-      if (trainNumber && arrivalTime && departureTime) {
-        schedule.addTrain(trainNumber, arrivalTime, departureTime)
-        document.getElementById('trainNumber').value = '';
-        document.getElementById('arrivalTime').value = '';
-        document.getElementById('departureTime').value = '';
-      } else {
-        alert("Please fill in all fields");
-      }
-    }
-  </script> -->
+  
 </body>
 </html>
